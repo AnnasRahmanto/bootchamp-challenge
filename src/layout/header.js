@@ -2,9 +2,10 @@ import React from "react";
 import logoBanner from "../assets/images/logo.png";
 import carLogo from "../assets/images/img_car.png";
 import Navbar from "../component/Navbar";
+import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
-
+  const navigate = useNavigate();
   return (
     <div>
       <header className="container-fluid bg-color">
@@ -12,16 +13,12 @@ const Header = (props) => {
           <div className="col d-flex logo-position">
             <nav className="navbar">
               <div className="container-fluid">
-                <img
-                  src={logoBanner}
-                  className="img-fluid"
-                  alt="pict-alt"
-                />
+                <img src={logoBanner} className="img-fluid" alt="pict-alt" />
               </div>
             </nav>
           </div>
           <div className="col">
-            <Navbar/>
+            <Navbar />
           </div>
         </div>
       </header>
@@ -37,17 +34,16 @@ const Header = (props) => {
               kebutuhanmu untuk sewa mobil selama 24 jam.
             </p>
             <div className="px-3 ms-4">
-              <button type="button" className="btn btn-success">
+              <button 
+                type="button" 
+                className="btn btn-success"
+                onClick={() => navigate('/cari-mobil')}>
                 Mulai Sewa Mobil
               </button>
             </div>
           </div>
           <div className="col-sm">
-            <img
-              src={carLogo}
-              className="img-fluid img-width"
-              alt="pick-alt"
-            />
+            <img src={carLogo} className="img-fluid img-width" alt="pick-alt" />
           </div>
         </div>
       </section>

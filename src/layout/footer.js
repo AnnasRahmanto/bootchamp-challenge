@@ -10,7 +10,7 @@ import Logo from "../assets/images/logo.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="container py-5">
+      <footer className="container py-5 mt-5">
         <div className="row">
           <div className="col-sm">
             <div className="grid row-gap-3">
@@ -51,47 +51,27 @@ const Footer = () => {
               <div className="d-flex flex-row mb-3">
                 <div>
                   <a href="#">
-                    <img
-                      src={Facebook}
-                      className="img-fluid"
-                      alt="pick-alt"
-                    />
+                    <img src={Facebook} className="img-fluid" alt="pick-alt" />
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <img
-                      src={Instagram}
-                      className="img-fluid"
-                      alt="pick-alt"
-                    />
+                    <img src={Instagram} className="img-fluid" alt="pick-alt" />
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <img
-                      src={Twitter}
-                      className="img-fluid"
-                      alt="pick-alt"
-                    />
+                    <img src={Twitter} className="img-fluid" alt="pick-alt" />
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <img
-                      src={Mail}
-                      className="img-fluid"
-                      alt="pick-alt"
-                    />
+                    <img src={Mail} className="img-fluid" alt="pick-alt" />
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <img
-                      src={Twitch}
-                      className="img-fluid"
-                      alt="pick-alt"
-                    />
+                    <img src={Twitch} className="img-fluid" alt="pick-alt" />
                   </a>
                 </div>
               </div>
