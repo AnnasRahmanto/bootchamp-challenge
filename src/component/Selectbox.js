@@ -2,8 +2,8 @@ import React from "react";
 
 const SelectBox = ({ label = "", title = "", data = [], ...props }) => {
   return (
-    <div className="form-group" style={{ width: "14rem" }}>
-      <label className="text-detail">{label}</label>
+    <div className="form-group" style={{ /* width: 14rem; */ }}>
+      <label className="text-detail form-label">{label}</label>
       <select
         {...props}
         className="text-detail form-control"
