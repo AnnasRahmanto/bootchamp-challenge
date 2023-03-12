@@ -7,9 +7,10 @@ import IconPrice from "../../assets/images/icon_price.png";
 import IconHrs from "../../assets/images/icon_24hrs.png";
 import IconProfessional from "../../assets/images/icon_professional.png";
 import VectorDown from "../../assets/images/Vector.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = (props) => {
-
+  const navigate = useNavigate();
   // console.log(window.location)
   return (
     <>
@@ -134,7 +135,7 @@ const Home = (props) => {
         </div>
       </section>
       <div>
-        <Testimonial/>
+        <Testimonial />
       </div>
 
       <section className="container py-5">
@@ -150,7 +151,10 @@ const Home = (props) => {
                 <br />
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <button className="btn btn-success btn-sm mb-5">
+              <button
+                className="btn btn-success btn-sm mb-5"
+                onClick={() => navigate("/cari-mobil")}
+              >
                 Mulai Sewa Mobil
               </button>
             </div>

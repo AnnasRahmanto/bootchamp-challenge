@@ -2,8 +2,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { useNavigate } from "react-router-dom";
 
 function OffcanvasNavbar() {
+
+  const navigate = useNavigate ();
   // console.log(window.location)
   return (
     <>
@@ -23,10 +26,14 @@ function OffcanvasNavbar() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-center flex-grow-1 pe-3 gap-3">
-                <Nav.Link href="/OurServices">Our Service</Nav.Link>
-                <Nav.Link href="WhyUs">Why Us</Nav.Link>
-                <Nav.Link href="/Testimonial">Testimonial</Nav.Link>
-                <Nav.Link href="/FAQ">FAQ</Nav.Link>
+                <Nav.Link onClick={() => navigate("/")}>Our Service</Nav.Link>
+                <Nav.Link onClick={() => navigate("/")}>
+                  Why Us
+                </Nav.Link>
+                <Nav.Link onClick={() => navigate("/")}>
+                  Testimonial
+                </Nav.Link>
+                <Nav.Link onClick={() => navigate("/")}>FAQ</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
